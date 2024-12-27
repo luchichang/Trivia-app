@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - sam build
-      - sam deploy --guided
+      - sam deploy --no-fail-on-empty-changeset
       - cd front-end-react
       - npm install
       - npm run build
